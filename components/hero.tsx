@@ -1,18 +1,12 @@
 import VideoThumb from '@/public/images/hero-image.png'
+import MainPhoto from '@/public/images/main-photo.png'
 import ModalVideo from '@/components/modal-video'
 import Link from 'next/link';
-
-<div>
-   <Link href="/newsletter">
-      <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4">Learn more</a>
-   </Link>
-</div>
-
+import Image from 'next/image'
 
 export default function Hero() {
   return (
     <section className="relative">
-
       {/* Illustration behind hero content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
         <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
@@ -42,13 +36,30 @@ export default function Hero() {
               <p className="text-3xl text-gray-900 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Your smile is our top priority </p>
               <p className="text-3xl md:text-2xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out" data-aos-delay="150">Dr. Reena Sharma</p>
             </div>
+            {/* This is the added Link component */}
+            <div>
+              
+            </div>
           </div>
 
           {/* Hero image */}
+          <div className="pb-100">
+    <Image className="rounded-full block mx-auto"data-aos="zoom-y-out" src={MainPhoto} width={300} height={300} alt="Testimonial 01" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+   
+</div>
+
+
+
           <ModalVideo
             thumb={VideoThumb}
-            thumbWidth={768}
-            thumbHeight={432}
+            thumbWidth={900}
+            thumbHeight={800}
             thumbAlt="Modal video thumbnail"
             video="/videos/video.mp4"
             videoWidth={1920}
@@ -58,5 +69,5 @@ export default function Hero() {
 
       </div>
     </section>
-  )
+  );
 }
