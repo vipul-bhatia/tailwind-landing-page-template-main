@@ -1,11 +1,5 @@
 "use client";
 
-export const metadata = {
-  title: 'Contact Us',
-  description: 'Page description',
-}
-
-
 import React, { useState } from 'react';
 import { db } from '../../../firebase/config.js';
 
