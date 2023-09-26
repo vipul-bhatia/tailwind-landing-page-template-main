@@ -7,7 +7,6 @@ export const metadata = {
 import React, { useState } from 'react';
 import { db } from '../../../firebase/config.js';
 
-import Link from 'next/link'
 
 export default function SignUp() {
   const [name, setName] = useState('');
