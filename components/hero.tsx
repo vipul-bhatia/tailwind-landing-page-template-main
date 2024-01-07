@@ -38,21 +38,21 @@ export default function Hero() {
             </div>
             {/* This is the added Link component */}
             <div>
-
+              
             </div>
           </div>
 
           {/* Hero image */}
           <div className="pb-100">
-            <Image className="rounded-full block mx-auto" data-aos="zoom-y-out" src={MainPhoto} width={300} height={300} alt="Testimonial 01" />
+    <Image className="rounded-full block mx-auto"data-aos="zoom-y-out" src={MainPhoto} width={300} height={300} alt="Testimonial 01" />
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-          </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+   
+</div>
 
 
 
