@@ -44,6 +44,7 @@ export default function SignUp() {
                   <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
                   <input id="name" type="text" className="form-input w-full text-gray-800" placeholder="Enter your name" required value={name}
           onChange={e => setName(e.target.value)}/>
+          
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
